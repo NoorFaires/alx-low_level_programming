@@ -19,7 +19,7 @@ while (c <= '9')
 }
 while (d <= 'f')
 {
-	putchar(d);  
+	putchar(d);
 	d++;
 }
 putchar('\n');
