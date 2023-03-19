@@ -2,8 +2,10 @@
 
 /**
  * main - Entry point
- * Description: A program that prints alphabet in lowercase
- * return: Returns 0 (success)
+ *
+ * Description: A program that prints alphabet in lowercase.
+ *
+ * return: returns 0 (success)
 */
 
 int main(void)
