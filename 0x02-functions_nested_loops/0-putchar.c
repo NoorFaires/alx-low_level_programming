@@ -1,8 +1,20 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Description: prints _putchar using putchar prototype
+ *
+ * Return: Always 0 (success)
+*/
 
-int _putchar(char c);
+int main(void)
+{
+	char str[] = "_putchar";
+	int c;
 
-#endif
+	for (c = 0; c < 8; c++)
+		_putchar(str[c]);
+	_putchar("\n");
+	return (0);
+}
