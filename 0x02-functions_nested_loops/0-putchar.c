@@ -1,13 +1,8 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 #include <stdio.h>
 
-/**
- * main - Entry point
- * Description: Prints _putchar
- * Return: Always 0 (success)
-*/
+int _putchar(char c);
 
-int main(void)
-{
-	printf("_putchar\n");
-	return (0);
-}
+#endif
