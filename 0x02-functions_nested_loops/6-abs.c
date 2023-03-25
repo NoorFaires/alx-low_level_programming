@@ -9,8 +9,8 @@
 int _abs(int n)
 {
 	if (n <= 0)
-		printf(n);
+		printf("%d \n", n);
 	else
-		printf(-n);
+		printf("%d \n", -n);
 return (0);
 }
