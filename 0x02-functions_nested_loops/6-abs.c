@@ -8,9 +8,7 @@
 
 int _abs(int n)
 {
-	if (n <= 0)
-		printf("%d \n", n);
-	else
-		printf("%d \n", -n);
-return (0);
+	if (n < 0)
+		n = (-1) * n;
+	return (n);
 }
