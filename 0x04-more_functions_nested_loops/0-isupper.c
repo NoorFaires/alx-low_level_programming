@@ -2,7 +2,7 @@
 
 /**
  * _isupper -  checks for uppercase character.
- * @c: c -  Variable
+ * @c: Variable
  * Return: Always 0.
  */
 int _isupper(int c)
