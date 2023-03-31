@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * _strcat - a function that appends the src string to the dest string
- *
- * Description: a function that concatenates two strings.
+ * _strcat - a function that concatenates two strings it will use at
+ *            most n bytes from src
  *
  * @dest: pointer to destination output
  * @src: pointer to source input
