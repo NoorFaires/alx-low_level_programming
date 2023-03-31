@@ -11,7 +11,7 @@ void reverse_array(int *a, int n)
 	int i;
 	int emp;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n / 2; i++)
 	{
 		emp = a[i];
 		a[i] = a[n - 1 - i];
