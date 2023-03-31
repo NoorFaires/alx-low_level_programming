@@ -2,7 +2,7 @@
 
 /**
  * _strcat - a function that appends the src string to the dest string
- * @dest: pointer to destination input
+ * @dest: pointer to destination output
  * @src: pointer to source input
  * Return: pointer to result @dest
 */
