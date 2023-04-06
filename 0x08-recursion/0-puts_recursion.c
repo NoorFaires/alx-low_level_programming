@@ -2,20 +2,18 @@
 
 /**
  * _puts_recursion - prints a string
- * @s : string input
+ * @s : pointer to string
  *
  * Return : Nothing
 */
 
 void _puts_recursion(char *s)
 {
-	int len, i;
-
-	len = 0;
-	while (*s != '\0')
-		len++;
-	for (i = 0; i < len; i++)
-		_putchar(s[i]);
-	_putchar('\n');
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
-
