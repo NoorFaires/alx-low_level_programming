@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j;
+	int i, mul;
 
 	if (argc == 1 || argc == 2)
 	{
@@ -19,12 +19,12 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		j = 1;
+		mul = 1;
 
 		for (i = 1; i < 3; i++)
-			j *= atoi(argv[i]);
+			mul *= atoi(argv[i]);
 
-		printf("%d\n", j);
+		printf("%d\n", mul);
 	}
 
 	return (0);
