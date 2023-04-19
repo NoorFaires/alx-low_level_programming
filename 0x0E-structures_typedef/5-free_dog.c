@@ -2,8 +2,8 @@
 #include "dog.h"
 
 /**
- * free_dog - initialize a variable of type struct dog
- * @d: dog's details
+ * free_dog - frees dogs
+ * @d: pointer to dog struct 
  */
 
 void free_dog(dog_t *d)
