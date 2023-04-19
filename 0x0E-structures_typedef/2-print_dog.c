@@ -1,18 +1,28 @@
 #include "dog.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
  * print_dog - prints a struct dog.
  * @d: struct dog.
  *
- * Return: void function
+ * Return: nothing.
  */
 void print_dog(struct dog *d)
 {
 	if (d)
 	{
-		printf("Name: %s\n", d->name ? d->name : "nil");
+		if (!(d->name))
+			printf("Name: (nil)\n");
+		else
+			printf("Name: %s\n", d->name);
+
 		printf("Age: %f\n", d->age);
-		printf("Owner: %s\n", d->owner ? d->owner : "nil");
+
+		if (!(d->owner))
+			printf("Owner: (nil)\n");
+		else
+			printf("Owner: %s\n", d->owner);
 	}
 }
+
