@@ -10,8 +10,8 @@
  */
 int main(int argc, char *argv[])
 {
-	char *opc = (char *) main;
-	int i, nbytes;
+	char *ptr = (char *) main;
+	int i, b;
 
 	if (argc != 2)
 	{
@@ -19,18 +19,18 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	nbytes = atoi(argv[1]);
+	b = atoi(argv[1]);
 
-	if (nbytes < 0)
+	if (b < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
 
-	for (i = 0; i < nbytes; i++)
+	for (i = 0; i < b; i++)
 	{
-		printf("%02x", opc[i] & 0xFF);
-		if (i != nbytes - 1)
+		printf("%02x", ptr[i] & 0xFF);
+		if (i != b - 1)
 			printf(" ");
 	}
 
