@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for  School students.
+ * main - check the code for the School students.
  * @argc: argument count.
  * @argv: argument vector.
  *
