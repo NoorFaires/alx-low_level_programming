@@ -2,7 +2,7 @@
 
 /**
  * print_list - prints a linked lists
- * @h: name of the list
+ * @h: pointer of the list
  * Return: the size of the list.
  */
 size_t print_list(const list_t *h)
