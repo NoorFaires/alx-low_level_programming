@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	from = open(argv[1], O_RDONLY);
 	if (from == -1)
 		dprintf(STDERR_FILENO, ERR_NOREAD, argv[1]), exit(98);
-	to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
+	to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
 	if (to == -1)
 		dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]), exit(99);
 
