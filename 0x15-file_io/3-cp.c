@@ -15,7 +15,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int from_fd = 0, to_fd = 0;
+	int from = 0, to = 0;
 	ssize_t nb;
 	char buf[1024];
 
