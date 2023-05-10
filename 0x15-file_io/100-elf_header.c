@@ -66,7 +66,8 @@ void print_data(Elf64_Ehdr elfstruct)
  */
 void print_version(Elf64_Ehdr elfstruct)
 {
-	printf("  Version:%d", elfstruct.e_ident[EI_VERSION]);
+	printf("  Version:                           %d",
+			elfstruct.e_ident[EI_VERSION]);
 	switch (elfstruct.e_ident[EI_VERSION])
 	{
 		case EV_CURRENT:
@@ -250,13 +251,9 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Can't open file: %s\n", argv[1]), exit(98);
 	nb = read(fo, &elfstruct, sizeof(elfstruct));
 	if (nb < 1 || nb != sizeof(elfstruct))
-	{
-		dprintf(STDERR_FILENO, "Can't read from file: %s\n", argv[1]);
-		exit(98);
-	}
+		dprintf(STDERR_FILENO, "Can't read from file: %s\n", argv[1]), exit(98);
 	if (elfstruct.e_ident[0] == 0x7f && elfstruct.e_ident[1] == 'E' &&
-			elfstruct.e_ident[2] == 'L' &&
-			elfstruct.e_ident[3] == 'F')
+			elfstruct.e_ident[2] == 'L' && elfstruct.e_ident[3] == 'F')
 	{
 		printf("ELF Header:\n");
 	}
