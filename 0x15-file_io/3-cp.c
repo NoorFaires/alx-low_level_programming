@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	if (to == -1)
 		dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]), exit(99);
 
-	while ((nb = read(from, buf, READ_BUF_SIZE)) > 0)
+	while ((nb = read(from, buf, 1024)) > 0)
 		if (write(to, buf, nb) != nb)
 			dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]), exit(99);
 	if (nb == -1)
