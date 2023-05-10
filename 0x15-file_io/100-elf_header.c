@@ -1,7 +1,7 @@
 #include "main.h"
 #include <elf.h>
 
-void print_osabi_more(Elf64_Ehdr h);
+void print_osabi_more(Elf64_Ehdr elfstruct);
 
 /**
  * print_magic - prints ELF magic bytes
