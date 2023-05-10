@@ -11,7 +11,7 @@
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: 1 on success 0 on failure
+ * Return: 0 on success
  */
 int main(int argc, char *argv[])
 {
@@ -41,5 +41,5 @@ int main(int argc, char *argv[])
 	if (to)
 		dprintf(STDERR_FILENO, ERR_NOCLOSE, from), exit(100);
 
-	return (1);
+	return (0);
 }
